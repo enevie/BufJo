@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MenuProj", "MenuProj\MenuProj.csproj", "{BB44BC57-6485-4925-A4DE-07AE5DEBDC3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbContext", "Data\DbContext.csproj", "{D6427225-A46C-4F00-ABD3-42BEF81DB5AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{08CF7BC8-6ECF-4F2F-B5BC-46C9A5115564}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB44BC57-6485-4925-A4DE-07AE5DEBDC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB44BC57-6485-4925-A4DE-07AE5DEBDC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB44BC57-6485-4925-A4DE-07AE5DEBDC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB44BC57-6485-4925-A4DE-07AE5DEBDC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6427225-A46C-4F00-ABD3-42BEF81DB5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6427225-A46C-4F00-ABD3-42BEF81DB5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6427225-A46C-4F00-ABD3-42BEF81DB5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6427225-A46C-4F00-ABD3-42BEF81DB5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D6427225-A46C-4F00-ABD3-42BEF81DB5AB} = {08CF7BC8-6ECF-4F2F-B5BC-46C9A5115564}
+	EndGlobalSection
+EndGlobal

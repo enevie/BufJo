@@ -1,0 +1,10 @@
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\Data.dll.config
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\Data.dll
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\Data.pdb
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\EntityFramework.dll
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\EntityFramework.xml
+D:\Projects\MenuProj\MenuProj\Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\MenuProj\MenuProj\Data\obj\Debug\DbContext.csprojResolveAssemblyReference.cache
+D:\Projects\MenuProj\MenuProj\Data\obj\Debug\Data.dll
+D:\Projects\MenuProj\MenuProj\Data\obj\Debug\Data.pdb
