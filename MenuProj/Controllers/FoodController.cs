@@ -37,7 +37,6 @@ namespace MenuProj.Controllers
                                           }).ToList();
 
             var model = new ChikenFoodViewModel();
-
             model.ChickenFood = food;
 
             return View(model);

@@ -23,3 +23,74 @@ textarea {
     max-width: 280px;
 }
 
+.jumbotron{
+    background-color:#808080;
+    padding-top:15%;
+}
+
+.img-rounded{
+    height:30%;
+    width:30%;
+}
+
+
+#Hr-11 {
+position:relative;
+list-style:none;
+margin:3px;
+padding:0;
+float:left;
+}
+#Hr-11 li {
+margin:0;
+padding:0;
+float:left;
+}
+#Hr-11 li a {
+display:inline;
+float:left;
+padding:11px 14px;
+text-decoration:none;
+text-align:center;
+font-family:Cambria,'Palatino Linotype','Book Antiqua','URW Palladio L',serif;
+text-transform:capitalize;
+font-size:24px;
+font-weight:bold;
+background:#4270E4;
+color:#A16312;
+border-right:1px solid transparent;
+border-left:1px solid transparent;
+background:-webkit-gradient(linear,left top,left bottom,from(#4270E4),to(#A5BEFD));
+background:-webkit-linear-gradient(top,#4270E4 0%,#A5BEFD 100%);
+background:-moz-linear-gradient(top,#4270E4 0%,#A5BEFD 100%);
+background:-o-linear-gradient(top,#4270E4 0%,#A5BEFD 100%);
+background:-ms-linear-gradient(top,#4270E4 0%,#A5BEFD 100%);
+background:linear-gradient(top,#4270E4 0%,#A5BEFD 100%);
+-moz-transition:all 0.5s ease-out;
+-webkit-transition:all 0.5s ease-out;
+-o-transition:all 0.5s ease-out;
+transition:all 0.5s ease-out;
+}
+#Hr-11 li a:hover,#Hr-11 li a:focus {
+color:#835211;
+border-right:1px solid #3813DA;
+border-left:1px solid #3813DA;
+box-shadow:inset 0px 2px 2px 2px #505350;
+background:#A5BEFD;
+background:-webkit-gradient(linear,left top,left bottom,from(#A5BEFD),to(#A5BEFD));
+background:-webkit-linear-gradient(top,#A5BEFD 0%,#A5BEFD 100%);
+background:-moz-linear-gradient(top,#A5BEFD 0%,#A5BEFD 100%);
+background:-o-linear-gradient(top,#A5BEFD 0%,#A5BEFD 100%);
+background:-ms-linear-gradient(top,#A5BEFD 0%,#A5BEFD 100%);
+background:linear-gradient(top,#A5BEFD 0%,#A5BEFD 100%);
+-moz-transition:all 0.3s ease-in;
+-webkit-transition:all 0.3s ease-in;
+-o-transition:all 0.3s ease-in;
+transition:all 0.3s ease-in;
+}
+#Hr-11 li a:active {
+-moz-box-shadow:inset 0px 2px 2px 2px #061167;
+-webkit-box-shadow:inset 0px 2px 2px 2px #061167;
+box-shadow:inset 0px 2px 2px 2px #061167;
+}
+

@@ -3,10 +3,13 @@
     ViewBag.Title = "Index";
 }
 
-@foreach (var category in Model.FoodTypes)
-{
-    <li>@Html.ActionLink(category, category)</li>
-}
+
+<ul id="Hr-11">
+    @foreach (var category in Model.FoodTypes)
+    {
+        <li>@Html.ActionLink(category, category)</li>
+    }
+</ul>
 
 <h2>Index</h2>
 
