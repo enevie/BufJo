@@ -1,0 +1,20 @@
+﻿@model MenuProj.Models.Food.ChikenFoodViewModel
+@{
+    ViewBag.Title = "Chicken";
+}
+
+<h2>Пилешко</h2>
+
+
+<div class="table">
+    @foreach (var item in Model.ChickenFood)
+    {
+        <div class="col">
+            <div class="row">@item.Name</div>
+            <div class="row">@item.Description</div>
+            <div class="row">@string.Format("{0:F2} лв.", @item.Price)</div>
+            <img src="~/Content/Images/ChickenFoods/chicken.jpg" style="width: 100px; height:100px; border-radius:10px;" />
+            <br />
+        </div>
+    }
+</div>

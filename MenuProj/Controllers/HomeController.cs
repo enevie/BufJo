@@ -12,6 +12,13 @@ namespace MenuProj.Controllers
     public class HomeController : Controller
     {
 
+        private MenuDbContext _db;
+
+        public HomeController()
+        {
+            _db = new MenuDbContext();
+        }
+
 
         public ActionResult Index()
         {
@@ -36,39 +43,39 @@ namespace MenuProj.Controllers
                 DrinkType = DrinkTypes.Other,
             });
 
-            _db.Purchases.Add(new Purchase()
-            {
-                DateOfPurchase = DateTime.Now,
-                PurchasedDrink = new List<PurchasedDrink>
-                {
-                    new PurchasedDrink
-                    {
-                        DrinkID = 1,
-                    }
-                },
-                PurchasedFood = new List<PurchasedFood>
-                {
-                        new PurchasedFood
-                        {
-                            FoodID = 1
-                        },
-                        new PurchasedFood
-                        {
-                            FoodID = 2
-                        }
-                },
-            });
+            //_db.Purchases.Add(new Purchase()
+            //{
+            //    DateOfPurchase = DateTime.Now,
+            //    PurchasedDrink = new List<PurchasedDrink>
+            //    {
+            //        new PurchasedDrink
+            //        {
+            //            DrinkID = 1,
+            //        }
+            //    },
+            //    PurchasedFood = new List<PurchasedFood>
+            //    {
+            //            new PurchasedFood
+            //            {
+            //                FoodID = 1
+            //            },
+            //            new PurchasedFood
+            //            {
+            //                FoodID = 2
+            //            }
+            //    },
+            //});
 
-            var currPur = _db.Purchases.FirstOrDefault(x => x.PurchaseID == 2);
-            var a = currPur.PurchasedFood.Select(x => x.FoodID);
-            var b = currPur.PurchasedDrink.Select(x => x.DrinkID);
+            //var currPur = _db.Purchases.FirstOrDefault(x => x.PurchaseID == 2);
+            //var a = currPur.PurchasedFood.Select(x => x.FoodID);
+            //var b = currPur.PurchasedDrink.Select(x => x.DrinkID);
 
-            decimal sum = 0;
+            //decimal sum = 0;
 
-            sum += _db.Foods.Where(x => a.Contains(x.FoodID)).Select(x => x.Price).Sum();
-            sum += _db.Drinks.Where(x => b.Contains(x.DrinkID)).Select(x => x.Price).Sum();
+            //sum += _db.Foods.Where(x => a.Contains(x.FoodID)).Select(x => x.Price).Sum();
+            //sum += _db.Drinks.Where(x => b.Contains(x.DrinkID)).Select(x => x.Price).Sum();
 
-            currPur.SumOfThePurchase = sum;
+            //currPur.SumOfThePurchase = sum;
 
             _db.SaveChanges();
             return View();
@@ -76,9 +83,10 @@ namespace MenuProj.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            var types = Enum.GetValues(typeof(FoodTypes)).Cast<FoodTypes>();
+            ViewBag.FoodTypes = types;
 
-            return View();
+            return View(ViewBag);
         }
 
         public ActionResult Contact()

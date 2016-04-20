@@ -1,0 +1,12 @@
+﻿@model MenuProj.Models.Food.FoodTypesViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+@foreach (var category in Model.FoodTypes)
+{
+    <li>@Html.ActionLink(category, category)</li>
+}
+
+<h2>Index</h2>
+
