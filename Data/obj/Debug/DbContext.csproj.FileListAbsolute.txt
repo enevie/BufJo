@@ -8,3 +8,13 @@ D:\Projects\MenuProj\MenuProj\Data\bin\Debug\EntityFramework.SqlServer.xml
 D:\Projects\MenuProj\MenuProj\Data\obj\Debug\DbContext.csprojResolveAssemblyReference.cache
 D:\Projects\MenuProj\MenuProj\Data\obj\Debug\Data.dll
 D:\Projects\MenuProj\MenuProj\Data\obj\Debug\Data.pdb
+E:\Proj\Menu\BufJo\Data\bin\Debug\Data.dll.config
+E:\Proj\Menu\BufJo\Data\bin\Debug\Data.dll
+E:\Proj\Menu\BufJo\Data\bin\Debug\Data.pdb
+E:\Proj\Menu\BufJo\Data\bin\Debug\EntityFramework.dll
+E:\Proj\Menu\BufJo\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\Proj\Menu\BufJo\Data\bin\Debug\EntityFramework.xml
+E:\Proj\Menu\BufJo\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\Proj\Menu\BufJo\Data\obj\Debug\DbContext.csprojResolveAssemblyReference.cache
+E:\Proj\Menu\BufJo\Data\obj\Debug\Data.dll
+E:\Proj\Menu\BufJo\Data\obj\Debug\Data.pdb
