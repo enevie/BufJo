@@ -24,13 +24,15 @@ textarea {
 }
 
 .jumbotron {
-    background-color: #808080;
+    background-color: white;
     margin-top: 15%;
-    height:500px;
+    height: 500px;
 }
 
 .img-rounded {
     width: 100%;
+    background-color: yellow;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 .menu {
@@ -38,6 +40,12 @@ textarea {
     margin: 0 auto;
     border: 1px solid black;
     overflow: hidden;
+}
+
+.separator {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
 }
 
 #button-food-main {
@@ -50,10 +58,12 @@ textarea {
 
 #button-drinks-main {
     width: 35%;
+    height:100%;
+    margin-left: 10%;
     height: 100%;
     border: 1px solid green;
-    overflow: hidden; /* if you don't want #second to wrap below #first */
     margin-right: 10%;
+    display:inline-block;
 }
 
 
