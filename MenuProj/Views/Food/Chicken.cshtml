@@ -33,7 +33,7 @@
         }
     </div>
     <div>
-        @Html.PagedListPager(Model, page => Url.Action("Chicken", new { page, pageSize = Model.PageSize }))
+        @Html.PagedListPager(Model, page => Url.Action("Chicken", new { page, pageSize = Model.PageSize }),PagedListRenderOptions.Minimal)
     </div>
 </div>
 
