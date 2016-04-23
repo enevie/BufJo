@@ -218,6 +218,7 @@
     <Content Include="Content\Images\MainMenuButtons\drinks.jpg" />
     <Content Include="Content\Images\MainMenuButtons\food.jpg" />
     <Content Include="Content\Images\MainMenuButtons\logo.png" />
+    <Content Include="Content\Images\MainMenuButtons\Pasta-Pane-Logo.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

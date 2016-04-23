@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div style="margin:0 auto; width:1000px; display:inline-block">
-        
+    <div class="logo">
+
         <a href='@Url.Action("Index", "Home")'>
-                <img src="~/Content/Images/MainMenuButtons/logo.png" style="margin:auto; display:block"/>
-</a>
+            <img src="~/Content/Images/MainMenuButtons/Pasta-Pane-Logo.jpg" div id="logo-image" />
+        </a>
     </div>
     @*<div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -24,16 +24,16 @@
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>*@
-            @*<div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Food", "Index", "Food")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>*@
-        @*</div>
-    </div>*@
+    @*<div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Food", "Index", "Food")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+            @Html.Partial("_LoginPartial")
+        </div>*@
+    @*</div>
+        </div>*@
     <div class="container body-content">
         @RenderBody()
         <hr />
