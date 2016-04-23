@@ -1,20 +1,40 @@
-﻿@model MenuProj.Models.Food.ChikenFoodViewModel
+﻿@model PagedList.PagedList<Data.Entities.Food>
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Chicken";
 }
 
 <h2>Пилешко</h2>
 
-
-<div class="table">
-    @foreach (var item in Model.ChickenFood)
-    {
-        <div class="col">
-            <div class="row">@item.Name</div>
-            <div class="row">@item.Description</div>
-            <div class="row">@string.Format("{0:F2} лв.", @item.Price)</div>
-            <img src="~/Content/Images/ChickenFoods/chicken.jpg" style="width: 100px; height:100px; border-radius:10px;" />
-            <br />
-        </div>
-    }
+<div class="menu">
+    <div class="table">
+        @for (var i = 1; i < @Model.Count(); i++)
+        {
+            var item = Model[i];
+            if (i % 2 == 0)
+            {
+                <span style="float:left">
+                    <img src="~/Content/Images/ChickenFoods/chicken.jpg" style="width: 200px; height:200px; border-radius:10px;" />
+                    <span>| @item.Name</span>
+                    <span>| @item.Price</span>
+                    <span>| @item.Description</span>
+                </span>
+                    <br />
+            }
+            else
+            {
+                <span style="padding-left:90px;">
+                    <img src="~/Content/Images/ChickenFoods/chicken.jpg" style="width: 200px; height:200px; border-radius:10px;" />
+                    <span>| @item.Name</span>
+                    <span>| @item.Price</span>
+                    <span>| @item.Description</span>
+                </span>
+            }
+        }
+    </div>
+    <div>
+        @Html.PagedListPager(Model, page => Url.Action("Chicken", new { page, pageSize = Model.PageSize }))
+    </div>
 </div>
+
+

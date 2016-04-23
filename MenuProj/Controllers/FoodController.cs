@@ -3,9 +3,12 @@ using Data.EnumsCategories;
 using MenuProj.Models.Food;
 using System;
 using System.Collections.Generic;
+using PagedList.Mvc;
+using PagedList;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Data.Entities;
 
 namespace MenuProj.Controllers
 {
@@ -26,20 +29,15 @@ namespace MenuProj.Controllers
             return View(model);
         }
 
-        public ActionResult Chicken()
+        [HttpGet]
+        public ActionResult Chicken(int page = 1, int pageSize = 11)
         {
-            var food = _db.Foods.Where(x => x.FoodType == FoodTypes.Chicken)
-                                .Select(y=> new ChickenFoodSingleViewModel
-                                          {
-                                              Description = y.Description,
-                                              Price = y.Price,
-                                              Name = y.Name
-                                          }).ToList();
+            var food = _db.Foods.Where(x => x.FoodType == FoodTypes.Chicken).OrderByDescending(x=>x.Name);
 
-            var model = new ChikenFoodViewModel();
-            model.ChickenFood = food;
+            var model = new PagedList<Food>(food, page, pageSize);
 
             return View(model);
         }
+
     }
 }

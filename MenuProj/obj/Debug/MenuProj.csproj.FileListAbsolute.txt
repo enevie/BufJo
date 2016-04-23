@@ -166,3 +166,7 @@ E:\Proj\Menu\BufJo\MenuProj\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\Proj\Menu\BufJo\MenuProj\obj\Debug\MenuProj.csprojResolveAssemblyReference.cache
 E:\Proj\Menu\BufJo\MenuProj\obj\Debug\MenuProj.dll
 E:\Proj\Menu\BufJo\MenuProj\obj\Debug\MenuProj.pdb
+E:\Proj\Menu\BufJo\MenuProj\bin\PagedList.dll
+E:\Proj\Menu\BufJo\MenuProj\bin\PagedList.Mvc.dll
+E:\Proj\Menu\BufJo\MenuProj\bin\PagedList.xml
+E:\Proj\Menu\BufJo\MenuProj\bin\PagedList.Mvc.xml
