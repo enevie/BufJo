@@ -222,11 +222,13 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\follow-button.css" />
     <Content Include="Content\Images\ChickenFoods\chicken.jpg" />
     <Content Include="Content\Images\MainMenuButtons\drinks.jpg" />
     <Content Include="Content\Images\MainMenuButtons\food.jpg" />
     <Content Include="Content\Images\MainMenuButtons\logo.png" />
     <Content Include="Content\Images\MainMenuButtons\Pasta-Pane-Logo.jpg" />
+    <Content Include="Content\JavaScript\follow-button\follow-button.js" />
     <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -289,7 +291,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\css\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

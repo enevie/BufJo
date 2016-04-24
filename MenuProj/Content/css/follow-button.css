@@ -1,0 +1,77 @@
+﻿html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* https://css-tricks.com/snippets/css/clear-fix/ */
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content, .sidebar {
+    float: left;
+}
+
+
+.button {
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 6px 5px 0px rgba(138,138,138,1);
+    -moz-box-shadow: 0px 6px 5px 0px rgba(138,138,138,1);
+    box-shadow: 0px 6px 5px 0px rgba(138,138,138,1);
+}
+
+    .button span {
+        background-color: floralwhite;
+        -webkit-box-shadow: 0px -1px #fff, /* top highlight */
+        0px 1px 1px #FFFFFF; /* bottom edge */
+        -webkit-border-radius: 10px;
+        -webkit-transition: -webkit-transform .1s ease-in-out;
+        display: inline-block;
+        padding: 10px 40px 10px 40px;
+        color: #3A474D;
+        text-transform: uppercase;
+        font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
+        font-weight: 700;
+        font-size: 13px;
+        text-shadow: 0px 1px #fff, 0px -1px #262F33;
+    }
+
+        .button span:hover {
+            color: #AEBF3B;
+            text-shadow: 0px -1px #97A63A;
+            cursor: pointer;
+        }
+
+    .button:active {
+        -webkit-box-shadow: 0px 3px rgba(128,128,128,1), 0px 4px rgba(118,118,118,1), 0px 5px rgba(108,108,108,1), 0px 6px rgba(98,98,98,1), 0px 7px rgba(88,88,88,1), 0px 8px rgba(78,78,78,1), 0px 10px 2px 0px rgba(128,128,128,.6); /* shadow */
+    }
+
+        .button:active span {
+            -webkit-transform: translate(0, 3px); /* depth of button press */
+        }
+
+    .button span::before {
+        content: "<";
+        display: block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 14px;
+        top: 12px;
+        font-family: 'Cabin';
+        font-weight: 700;
+        color: #AEBF3B;
+        text-shadow: 0px 1px #fff, 0px -1px #97A63A;
+        font-size: 13px;
+    }
+
+    .button span:after {
+    }
