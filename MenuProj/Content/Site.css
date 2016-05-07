@@ -126,6 +126,15 @@ textarea {
     float: left;
 }
 
+.item-name{
+    font-family:Arial;
+    font-size:23px;
+    color:#DB9543;
+    font-style:italic;
+    text-decoration:double;
+    padding-bottom:5px;
+}
+
 .item-price {
     text-align: left;
 }
@@ -134,6 +143,6 @@ textarea {
     text-align: left;
 }
 
-.item-specific{
-    text-align:right;
+.item-specific {
+    text-align: left;
 }
