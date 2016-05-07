@@ -30,7 +30,7 @@ namespace MenuProj.Controllers
         }
 
         [HttpGet]
-        public ActionResult Chicken(int page = 1, int pageSize = 11)
+        public ActionResult Chicken(int page = 1, int pageSize = 5)
         {
             var food = _db.Foods.Where(x => x.FoodType == FoodTypes.Chicken).OrderByDescending(x=>x.Name);
 

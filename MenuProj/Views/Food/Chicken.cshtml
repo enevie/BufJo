@@ -5,53 +5,56 @@
 }
 
 <head>
-   
     <link href="~/Content/css/follow-button.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-    
+    @Styles.Render("~/Content/css")
 </head>
 
 <h2>Пилешко</h2>
 
 <div class="sidebar">
     <div class="box follow-scroll">
-        @*@Html.ActionLink("BACK TO FOODS", "Index", "Home", new {@class = "button"})*@
         <a href=@Url.Action("Index","Food") class="button">
             <span>Храни</span>
         </a>
     </div>
 </div>
+<div class="sidebar-right">
+    <div class="box follow-scroll">
+        <a href=@Url.Action("Index","Food") class="button">
+            <span>Напитки</span>
+        </a>
+    </div>
+</div>
 <div class="menu">
-    
     <div class="table">
-        @for (var i = 1; i < @Model.Count(); i++)
+        @for (var i = 0; i < @Model.Count(); i++)
         {
             var item = Model[i];
-            if (i % 2 == 0)
-            {
-                <span style="float:left; padding-left:90px;">
-                    <img src="~/Content/Images/ChickenFoods/chicken.jpg" style="width: 200px; height:200px; border-radius:10px;" />
-                    <span>| @item.Name</span>
-                    <span>| @item.Price</span>
-                    <span>| @item.Description</span>
-                </span>
-                <br />
-            }
-            else
-            {
-                <span style="padding-left:90px;">
-                    <img src="~/Content/Images/ChickenFoods/chicken.jpg" style="width: 200px; height:200px; border-radius:10px;" />
-                    <span>| @item.Name</span>
-                    <span>| @item.Price</span>
-                    <span>| @item.Description</span>
-                </span>
-            }
+            <div class="menu-item">
+                <img src="~/Content/Images/ChickenFoods/chicken.jpg" />
+                <div class="item-name">
+                    <p>@item.Name</p>
+                </div>
+                <div class="item-description">
+                    <span>Описание:</span><br />
+                    <span>@item.Description</span>
+                </div>
+                <div class="item-price">
+                    <span>Цена</span>
+                    <span>@item.Price</span>
+                </div>
+               
+                <div class="item-specific">
+                    <span>@item.Grammage грама</span>
+                </div>
+            </div>
+            <br />
         }
     </div>
-  
     <div>
-        @Html.PagedListPager(Model, page => Url.Action("Chicken", new { page, pageSize = Model.PageSize }),PagedListRenderOptions.Minimal)
+        @Html.PagedListPager(Model, page => Url.Action("Chicken", new { page, pageSize = Model.PageSize }), PagedListRenderOptions.Minimal)
     </div>
 </div>
 <script src="~/Content/JavaScript/follow-button/follow-button.js"></script>

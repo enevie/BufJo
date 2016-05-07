@@ -55,26 +55,27 @@ textarea {
     margin: 0 auto;
     overflow: hidden;
     display: block;
+    height: 80%;
 }
 
 .categories {
     list-style-type: none;
 }
 
-.categories li{
-    text-align:center;
-    margin-top:10px;
-    padding-right:40px;
-    width:100%;
-}
+    .categories li {
+        text-align: center;
+        margin-top: 10px;
+        padding-right: 40px;
+        width: 100%;
+    }
 
-.categories li a{
-    text-decoration: none;
-    font-size:150%;
-    font-family:Andalus;
-    font-style:italic;
-    color:#DE9A50;
-}
+        .categories li a {
+            text-decoration: none;
+            font-size: 150%;
+            font-family: Andalus;
+            font-style: italic;
+            color: #DE9A50;
+        }
 
 
 #button-food-main {
@@ -94,4 +95,45 @@ textarea {
     height: 100%;
     margin-right: 10%;
     display: inline-block;
+}
+
+.menu-item-span-first {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.menu-item-span {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid red;
+    margin-top: 150px;
+}
+
+.menu-item {
+    display: inline-block;
+    border: 1px solid black;
+    width: 60%;
+    padding-bottom: 60px;
+}
+
+.menu .table img {
+    width: 230px;
+    height: 230px;
+    border: 1px solid green;
+    float: left;
+}
+
+.item-price {
+    text-align: left;
+}
+
+.item-description {
+    text-align: left;
+}
+
+.item-specific{
+    text-align:right;
 }

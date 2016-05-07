@@ -18,9 +18,11 @@
     float: left;
 }
 
+.sidebar-right{
+    float:right;
+}
 
 .button {
-    position: absolute;
     display: inline-block;
     margin: 0 auto;
     -webkit-box-shadow: 0px 6px 5px 0px rgba(138,138,138,1);
@@ -35,13 +37,14 @@
         -webkit-border-radius: 10px;
         -webkit-transition: -webkit-transform .1s ease-in-out;
         display: inline-block;
-        padding: 10px 40px 10px 40px;
+        padding: 10px 40px 5px 40px;
         color: #3A474D;
         text-transform: uppercase;
         font-family: 'TradeGothicLTStd-BdCn20','PT Sans Narrow';
         font-weight: 700;
         font-size: 13px;
         text-shadow: 0px 1px #fff, 0px -1px #262F33;
+        width:150px;
     }
 
         .button span:hover {
@@ -59,7 +62,6 @@
         }
 
     .button span::before {
-        content: "<";
         display: block;
         width: 10px;
         height: 10px;
